@@ -30,7 +30,7 @@ QUECTEL_BG96_CellularContext::~QUECTEL_BG96_CellularContext()
 
 bool QUECTEL_BG96_CellularContext::stack_type_supported(nsapi_ip_stack_t stack_type)
 {
-    if (stack_type == IPV4_STACK) {
+    if (stack_type == IPV4_STACK || stack_type == IPV6_STACK) {
         return true;
     }
     return false;
